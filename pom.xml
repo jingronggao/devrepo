@@ -41,6 +41,7 @@
               <username>testId</username>
               <password>testPwd</password>
               <overwrite>true</overwrite>
+              <skipCache>true</skipCache>
             </configuration>
           </execution>
 <execution>
@@ -56,6 +57,7 @@
               <username>testId</username>
               <password>testPwd</password>
               <overwrite>true</overwrite>
+              <skipCache>true</skipCache>
             </configuration>
           </execution>
 
