@@ -17,7 +17,7 @@ RUN ls -la /opt/ibm/wlp/usr/shared/resources/db2/
 
 #FEATURES: Install any features that are required
 RUN apt-get update && apt-get dist-upgrade -y \
-&& rm -rf /var/lib/apt/lists/*
+#&& rm -rf /var/lib/apt/lists/*
 RUN /opt/ibm/wlp/bin/installUtility install  --acceptLicense \
 	jsp-2.3 \
 	ejbLite-3.2 \
