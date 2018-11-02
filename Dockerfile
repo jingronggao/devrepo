@@ -11,7 +11,7 @@ COPY ./binary/application/* /config/dropins/
 
 
 #FEATURES: Install any features that are required
-RUN apt-get update && apt-get dist-upgrade -y
+RUN apt-get update && apt-get dist-upgrade -y \
 #&& rm -rf /var/lib/apt/lists/*
 RUN /opt/ibm/wlp/bin/installUtility install  --acceptLicense \
 	jsp-2.3 \
