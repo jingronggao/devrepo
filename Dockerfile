@@ -6,11 +6,10 @@
 FROM websphere-liberty:webProfile7
 
 #BINARIES: Add in all necessary application binaries
+ls .
 COPY ./server.xml /config
 COPY ./binary/application/* /config/dropins/
 COPY ./binary/lib/* /config/lib/
-RUN ls -la ./binary/application/
-RUN ls -la ./binary/lib/
 
 #FEATURES: Install any features that are required
 RUN apt-get update && apt-get dist-upgrade -y \
