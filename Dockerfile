@@ -6,7 +6,7 @@
 FROM websphere-liberty:webProfile7
 
 #BINARIES: Add in all necessary application binaries
-ls .
+RUN ls .
 COPY ./server.xml /config
 COPY ./binary/application/* /config/dropins/
 COPY ./binary/lib/* /config/lib/
