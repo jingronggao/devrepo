@@ -8,11 +8,13 @@ FROM websphere-liberty:webProfile7
 #BINARIES: Add in all necessary application binaries
 COPY ./server.xml /config
 COPY ./binary/application/* /config/dropins/
-
+COPY ./binary/lib/* /config/lib/
+RUN ls -la ./binary/application/
+RUN ls -la ./binary/lib/
 
 #FEATURES: Install any features that are required
 RUN apt-get update && apt-get dist-upgrade -y \
-&& rm -rf /var/lib/apt/lists/*
+#&& rm -rf /var/lib/apt/lists/*
 RUN /opt/ibm/wlp/bin/installUtility install  --acceptLicense \
 	jsp-2.3 \
 	ejbLite-3.2 \
