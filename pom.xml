@@ -75,7 +75,7 @@
               <executable>mkdir</executable>
               <arguments>
                 <argument>-p</argument>
-                  <argument>${project.build.directory}/../binary/application</argument>
+                  <argument>${project.build.directory}/binary/application</argument>
               </arguments>
             </configuration>
           </execution>
@@ -89,7 +89,7 @@
               <executable>mkdir</executable>
               <arguments>
                 <argument>-p</argument>
-                <argument>${project.build.directory}/../binary/lib</argument>
+                <argument>${project.build.directory}/binary/lib</argument>
               </arguments>
             </configuration>
           </execution>
@@ -103,7 +103,7 @@
                   <executable>cp</executable>
                   <arguments>
                     <argument>${project.build.directory}/binary-modresorts-1.0.war</argument>
-                    <argument>${project.build.directory}/../binary/application/modresorts-1.0.war</argument>
+                    <argument>${project.build.directory}/binary/application/modresorts-1.0.war</argument>
                   </arguments>
                 </configuration>
               </execution>
@@ -132,7 +132,7 @@
                   <executable>cp</executable>
                   <arguments>
                     <argument>${project.build.directory}/db2driver-db2jcc-1.0.jar</argument>
-                    <argument>${project.build.directory}/../binary/lib/db2jcc-1.0.jar</argument>
+                    <argument>${project.build.directory}/binary/lib/db2jcc-1.0.jar</argument>
                   </arguments>
                 </configuration>
               </execution>
