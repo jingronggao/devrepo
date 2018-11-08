@@ -9,10 +9,11 @@ FROM websphere-liberty:webProfile7
 RUN ls .
 RUN ls /
 COPY ./server.xml /config
-RUN ls /config
+RUN ls -la /config
 COPY ./binary/application/* /config/dropins/
-RUN ls ./binary
+RUN ls -la /config/dropins
 COPY ./binary/lib/* /config/lib/
+RUN ls -la /config/lib
 
 #FEATURES: Install any features that are required
 RUN apt-get update && apt-get dist-upgrade -y \
