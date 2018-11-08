@@ -8,9 +8,10 @@ FROM websphere-liberty:webProfile7
 #BINARIES: Add in all necessary application binaries
 RUN ls .
 RUN ls /
-RUN find / -name *modresorts-1.0.war
 COPY ./server.xml /config
+RUN ls /config
 COPY ./binary/application/* /config/dropins/
+RUN ls ./binary
 COPY ./binary/lib/* /config/lib/
 
 #FEATURES: Install any features that are required
