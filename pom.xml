@@ -49,17 +49,18 @@
           <artifactId>modresorts</artifactId>
           <version>1.0</version>
            <type>war</type>
-          <overWrite>true</overWrite>
-          
-          <mdep.overWriteReleases>true</mdep.overWriteReleases>
-          <mdep.overWriteSnapshots>true</mdep.overWriteSnapshots>
-          <mdep.overIfNewer>false</mdep.overIfNewer>
           
           
          <outputDirectory>{project.build.directory}</outputDirectory>
           <destFileName>modresorts-1.0.war</destFileName>
+
         </artifactItem>
      </artifactItems>
+     
+               <overWriteReleases>true</overWriteReleases>
+              <overWriteSnapshots>true</overWriteSnapshots>
+              <overWriteIfNewer>false</overWriteIfNewer>
+              
    </configuration>
  </execution>
  <execution>
@@ -80,6 +81,10 @@
           <destFileName>db2jcc-1.0.jar</destFileName>
         </artifactItem>
      </artifactItems>
+     
+               <overWriteReleases>true</overWriteReleases>
+              <overWriteSnapshots>true</overWriteSnapshots>
+              <overWriteIfNewer>false</overWriteIfNewer>
    </configuration>
  </execution>
 
