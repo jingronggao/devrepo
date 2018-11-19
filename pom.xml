@@ -87,7 +87,7 @@
         
         
                     <execution>
-               <id>make sure file binary are downloaded to required dirs</id>
+               <id>manual debug make sure file binary are downloaded to required dirs</id>
                <phase>verify</phase>
                <goals>
                   <goal>exec</goal>
