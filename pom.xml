@@ -51,9 +51,9 @@
            <type>war</type>
           <overWrite>true</overWrite>
           
-          <overWriteReleases>true</overWriteReleases>
-          <overWriteSnapshots>true</overWriteSnapshots>
-          
+          <mdep.overWriteReleases>true</mdep.overWriteReleases>
+          <mdep.overWriteSnapshots>true</mdep.overWriteSnapshots>
+          <mdep.overIfNewer>false</mdep.overIfNewer>
           
           
          <outputDirectory>{project.build.directory}</outputDirectory>
