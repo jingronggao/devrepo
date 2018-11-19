@@ -49,18 +49,11 @@
           <artifactId>modresorts</artifactId>
           <version>1.0</version>
            <type>war</type>
-          
-          
+          <overWrite>true</overWrite>
          <outputDirectory>{project.build.directory}</outputDirectory>
           <destFileName>modresorts-1.0.war</destFileName>
-
         </artifactItem>
      </artifactItems>
-     
-               <overWriteReleases>true</overWriteReleases>
-              <overWriteSnapshots>true</overWriteSnapshots>
-              <overWriteIfNewer>false</overWriteIfNewer>
-              
    </configuration>
  </execution>
  <execution>
@@ -81,10 +74,6 @@
           <destFileName>db2jcc-1.0.jar</destFileName>
         </artifactItem>
      </artifactItems>
-     
-               <overWriteReleases>true</overWriteReleases>
-              <overWriteSnapshots>true</overWriteSnapshots>
-              <overWriteIfNewer>false</overWriteIfNewer>
    </configuration>
  </execution>
 
@@ -95,26 +84,6 @@
         <groupId>org.codehaus.mojo</groupId>
         <version>1.2.1</version>
         <executions>
-        
-        
-                    <execution>
-               <id>manual debug make sure file binary are downloaded to required dirs</id>
-               <phase>verify</phase>
-               <goals>
-                  <goal>exec</goal>
-               </goals>
-               <configuration>
-                  <executable>find</executable>
-                  <arguments>
-                    <argument>/home/jenkins/workspace/</argument>
-                    <argument>-name</argument>
-                    <argument>modresorts-1.0.war</argument>
-                  </arguments>
-                </configuration>
-              </execution>
-              
-              
-              
           <execution>
             <id>create binary file folder</id>
             <phase>verify</phase>
