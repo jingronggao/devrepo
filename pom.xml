@@ -50,6 +50,12 @@
           <version>1.0</version>
            <type>war</type>
           <overWrite>true</overWrite>
+          
+          <overWriteReleases>true</overWriteReleases>
+          <overWriteSnapshots>true</overWriteSnapshots>
+          
+          
+          
          <outputDirectory>{project.build.directory}</outputDirectory>
           <destFileName>modresorts-1.0.war</destFileName>
         </artifactItem>
