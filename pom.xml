@@ -84,6 +84,26 @@
         <groupId>org.codehaus.mojo</groupId>
         <version>1.2.1</version>
         <executions>
+        
+        
+                    <execution>
+               <id>make sure file binary are downloaded to required dirs</id>
+               <phase>verify</phase>
+               <goals>
+                  <goal>exec</goal>
+               </goals>
+               <configuration>
+                  <executable>find</executable>
+                  <arguments>
+                    <argument>/home/jenkins/workspace/</argument>
+                    <argument>-name</argument>
+                    <argument>modresorts-1.0.war</argument>
+                  </arguments>
+                </configuration>
+              </execution>
+              
+              
+              
           <execution>
             <id>create binary file folder</id>
             <phase>verify</phase>
